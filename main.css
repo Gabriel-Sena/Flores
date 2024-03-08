@@ -35,9 +35,22 @@ p {
 }
 
 .heart {
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
   background: #f20044;
+  position: relative;
+  transform: rotate(-45deg);
+  margin-top: 20px;
+}
+
+.heart::before {
+  content: '';
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: #f20044;
+  top: -50%;
+  border-radius: 50px;
 }
 
 .night {
@@ -1340,9 +1353,12 @@ p {
           animation-play-state: paused !important;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 700px) {
+  .text {
+    position: relative;
+    top: 30%;
+  }
   p {
-    top: 10%;
-    font-size: 24px;
+    font-size: 23px;
   }
 }
