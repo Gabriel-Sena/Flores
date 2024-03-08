@@ -20,14 +20,15 @@ body {
   perspective: 1000px;
 }
 
- p {
+p {
+  border: 1px solid red;
   position: relative;
   top: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 18px;
+  font-size: 25px;
   color: #fff;
 }
 
@@ -1329,4 +1330,11 @@ body {
 .container * {
   -webkit-animation-play-state: paused !important;
           animation-play-state: paused !important;
+}
+
+@media (max-width: 600px) {
+  p {
+    top: 10%;
+    font-size: 24px;
+  }
 }
